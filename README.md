@@ -15,14 +15,14 @@ Example of how it looks:
 
 ![Screenshot](screenshot_dendogram.PNG)
 
-##Installation Steps
+## Installation Steps
 
 You can just copy the dendogram_vis folder into KIBANA_HOME/src/plugins)
 and run kibana (with --dev parameter).
 
 You will have to re-bundle, if you just start the service or run in non-dev mode.
 
-##How does it work
+## How does it work
 
 In order to work this plugins needs a simple Schema configuration:
 
@@ -39,14 +39,18 @@ into the elasticsearch server.
 The index on the elasticsearch should have a field called "id", that contains (for instance):
 
 parent
+
 parent.child1
+
 parent.child2
+
 parent.child1.child1
+
 ...
 
 and so on.
 
-##Future changes
+## Future changes
 
 - Add filtering from the nodes (clicking a node adds/remove filters)
 - Zooming and Panning
