@@ -45,3 +45,9 @@ parent.child1.child1
 ...
 
 and so on.
+
+##Future changes
+
+- Add filtering from the nodes (clicking a node adds/remove filters)
+- Zooming and Panning
+- Colors (or icons) change based on data
