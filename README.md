@@ -13,7 +13,7 @@ please let me know.
 
 Example of how it looks:
 
-![Screenshot](screenshot_dendogram.png)
+![Screenshot](screenshot_dendogram.PNG)
 
 ##Installation Steps
 
