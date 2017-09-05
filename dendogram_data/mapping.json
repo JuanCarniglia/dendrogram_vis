@@ -1,0 +1,14 @@
+{
+    "mappings": {
+      "dendogram_data": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "long"
+          }
+        }
+      }
+    }
+ }
