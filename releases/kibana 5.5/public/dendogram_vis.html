@@ -1,0 +1,13 @@
+<div ng-controller="KbnDendogramVisController" class="dendogram-vis">
+
+
+  <div class="error-container" ng-if="visErrors && visErrors.length > 0">
+    <b class="fa fa-warning"></b>
+    <div class="error-item" ng-repeat="error in visErrors" ng-style="{'font-size': vis.params.fontSizeLabel+'pt'}">
+      <b class="error-title">{{error.title}}:</b>
+      <b ng-model="error" ng-show="error.description" class="error-description">{{error.description}}</b>
+      <b ng-model="error" ng-show="!error.description" class="error-description">No description for this error.</b>
+      <br />
+    </div>
+  </div>
+</div>

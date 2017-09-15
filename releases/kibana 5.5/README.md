@@ -50,8 +50,7 @@ parent.child1.child1
 
 and so on.
 
-
-## Notes on D3 (Specially for versions 5.x and 6.x)
+## Notes on D3
 
 To make it work you have to have the latest D3 distribution (Which up to today is #4).
 
@@ -72,7 +71,6 @@ You MAY encounter an issue with xmlhttprequest (not finding a module called chil
 To the xmlhttprequest package.json file (that got installed by npm on the node_modules folder). 
 
 As long as you don't actually USE xmlhttprequest, from the visualization, it should be ok.  
-
 
 ## Future changes
 
