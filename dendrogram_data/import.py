@@ -29,8 +29,8 @@ def importData(file):
     printProgressBar(0, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
     i = 0
     for hit in json:
-        es.index(index='dendogram_data', doc_type='data', body=hit)
+        es.index(index='dendrogram_data', doc_type='data', body=hit)
         printProgressBar(i + 1, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
         i = i + 1
 
-importData('dendogram_data.csv')
+importData('dendrogram_data.csv')

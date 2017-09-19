@@ -1,25 +1,25 @@
 define(function (require) {
-  require('plugins/dendogram_vis/dendogram_vis.less');
-  require('plugins/dendogram_vis/dendogram_vis_controller');
+  require('plugins/dendrogram_vis/dendrogram_vis.less');
+  require('plugins/dendrogram_vis/dendrogram_vis_controller');
 
-  require('ui/registry/vis_types').register(KbnDendogramVisProvider);
+  require('ui/registry/vis_types').register(KbnDendrogramVisProvider);
 
-  function KbnDendogramVisProvider(Private) {
+  function KbnDendrogramVisProvider(Private) {
     var TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
     var Schemas = Private(require('ui/Vis/Schemas'));
 
     return new TemplateVisType({
-      name: 'dendogram_vis',
-      title: 'Dendogram',
+      name: 'dendrogram_vis',
+      title: 'Dendrogram',
       icon: 'fa-table',
-      description: 'Dendogram Visualization Plugin (D3)',
-      template: require('plugins/dendogram_vis/dendogram_vis.html'),
+      description: 'Dendrogram Visualization Plugin (D3)',
+      template: require('plugins/dendrogram_vis/dendrogram_vis.html'),
       params: {
         defaults: {
           fontSize:30,
           fontSizeLabel: 10
         },
-        editor: require('plugins/dendogram_vis/dendogram_vis.html')
+        editor: require('plugins/dendrogram_vis/dendrogram_vis.html')
       },
       schemas: new Schemas([{
         group: 'metrics',
@@ -41,5 +41,5 @@ define(function (require) {
       requiresSearch: true
     });
   }
-  return KbnDendogramVisProvider;
+  return KbnDendrogramVisProvider;
 });

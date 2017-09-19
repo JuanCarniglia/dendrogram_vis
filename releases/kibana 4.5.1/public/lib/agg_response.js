@@ -1,5 +1,5 @@
 define(function (require) {
-  return function dendogramProvider(Private, Notifier) {
+  return function dendrogramProvider(Private, Notifier) {
 
     return function (vis, resp) {
 

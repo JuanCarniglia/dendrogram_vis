@@ -1,7 +1,7 @@
-# Kibana Dendogram Visualization to show ... dendograms :) - Plugin
+# Kibana Dendrogram Visualization to show ... dendrograms :) - Plugin
 
 This is a new custom visualization (for Kibana version 4.5.1) that allows
-displaying a dendogram chart to show and index or classes, or some other hierarchical
+displaying a dendrogram chart to show and index or classes, or some other hierarchical
 structure.
 
 If you really liked this and feel like making a donation : <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=juan.carniglia@gmail.com&lc=AR&item_name=JuanCarniglia&item_number=1009&currency_code=USD&bn=PP-DonationsBF:btn_donate_LG.gif:NonHosted">
@@ -13,11 +13,11 @@ please let me know.
 
 Example of how it looks:
 
-![Screenshot](screenshot_dendogram.PNG)
+![Screenshot](screenshot_dendrogram.PNG)
 
 ## Installation Steps
 
-You can just copy the dendogram_vis folder into KIBANA_HOME/src/plugins)
+You can just copy the dendrogram_vis folder into KIBANA_HOME/src/plugins)
 and run kibana (with --dev parameter).
 
 You will have to re-bundle, if you just start the service or run in non-dev mode.
@@ -31,7 +31,7 @@ In order to work this plugins needs a simple Schema configuration:
 
 (See flare.csv as an example)
 
-In this project there is a folder (dendogram_data) with a script in python to get a CSV
+In this project there is a folder (dendrogram_data) with a script in python to get a CSV
 into the elasticsearch server.
 
 (The python script requires elasticsearch and csv packages).
@@ -56,7 +56,7 @@ To make it work you have to have the latest D3 distribution (Which up to today i
 
 The problem is that Kibana 5.5 comes with version 3, so you have to:
 
-(whils on the dendogram_vis folder)
+(whils on the dendrogram_vis folder)
 ```
 npm install d3 d3-tree
 ```

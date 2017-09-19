@@ -1,4 +1,4 @@
-module.exports = function dendogramProvider(Private, Notifier) {
+module.exports = function dendrogramProvider(Private, Notifier) {
 
   return function (vis, resp) {
 

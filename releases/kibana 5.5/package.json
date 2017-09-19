@@ -1,9 +1,9 @@
 {
-  "name": "dendogram_vis",
+  "name": "dendrogram_vis",
   "version": "kibana",
   "authors": [
     "Juan Carniglia <juan.carniglia@gmail.com>"
   ],
-  "description": "Dendogram Visualization (D3)",
+  "description": "Dendrogram Visualization (D3)",
   "private": false
 }

@@ -2,11 +2,11 @@ import * as d3 from 'd3';
 
 define(function (require) {
 
-  var module = require('ui/modules').get('kibana/dendogram_vis', ['kibana']);
+  var module = require('ui/modules').get('kibana/dendrogram_vis', ['kibana']);
 
   var numeral = require('numeral');
 
-  module.controller('KbnDendogramVisController',
+  module.controller('KbnDendrogramVisController',
     function ($scope, $element, $rootScope, Private) {
       var chartData = null;
       var index = null;

@@ -3,11 +3,11 @@ import * as d3 from 'd3';
 import {
   uiModules
 } from 'ui/modules';
-const module = uiModules.get('kibana/dendogram_vis', ['kibana']);
+const module = uiModules.get('kibana/dendrogram_vis', ['kibana']);
 
 import numeral from 'numeral';
 
-module.controller('KbnDendogramVisController',
+module.controller('KbnDendrogramVisController',
   function ($scope, $element, $rootScope, Private) {
     let chartData = null;
     let index = null;
